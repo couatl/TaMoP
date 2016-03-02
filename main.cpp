@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     FILE *File2;
     char Str1[128], Str2[128];
     char *Name1, *Name2;
-    int ch = 0;
+    int ch;
     int str1 = 0, str2 = 0;
 
     if (argc != 3)
@@ -30,6 +30,7 @@ int main(int argc, char *argv[])
 
     while(fgets(Str1, 128, File1))
     {
+        ch = 0;
         while(fgets(Str2, 128, File2))
         {
              ch = strcmp(Str1, Str2);
