@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+//Граф храним в виде вектора списка смежных вершин
+
 struct  Edge
 {
     unsigned vertexTo;
